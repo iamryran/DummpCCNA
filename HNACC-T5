@@ -1,0 +1,68 @@
+en
+conf t
+hostname HN.ACC05
+ip routing
+vl 10
+name IT
+ex
+vl 20
+name Sale
+ex
+vl 30
+name ACC
+ex
+vl 40
+name HR
+ex
+vl 90
+name Management
+ex
+
+int range f0/21-22
+channel-group 1 mode active
+ex
+
+int port-channel 1
+sw tr en do
+sw mo tr 
+ex
+
+int range f0/23-24
+channel-group 2 mode active
+ex
+
+int port-channel 2
+sw tr en do
+sw mo tr 
+ex
+
+int range f0/1-5
+sw mo acc 
+sw acc vl 10
+ex
+
+int range f0/6-10
+sw mo acc 
+sw acc vl 20
+ex
+
+int range f0/11-15
+sw mo acc 
+sw acc vl 30
+ex
+
+int range f0/16-20
+sw mo acc 
+sw acc vl 40
+ex
+
+int range f0/21-24
+sw mo acc 
+sw acc vl 90
+ex
+
+int range g0/1
+sw mo acc
+sw acc vl 10
+ex
+

@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Hồ Hoàn Kiếm",
+          "description": "Hồ nổi tiếng ở Hà Nội"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [105.8520, 21.0285]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Lăng Chủ tịch Hồ Chí Minh",
+          "description": "Di tích lịch sử quan trọng"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [105.8346, 21.0368]
+        }
+      }
+    ]
+  }
+  

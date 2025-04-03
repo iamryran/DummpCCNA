@@ -1,0 +1,19 @@
+en
+conf t
+hostname HN.ACC03
+ip routing
+vl 10
+name IT
+ex
+vl 20
+name Sale
+ex
+vl 30
+name ACC
+ex
+vl 40
+name HR
+ex
+vl 90
+name Management
+ex
