@@ -1,0 +1,33 @@
+inter f0/1
+
+
+spanning-tree portfast
+
+spanning-tree bpduguard enable
+
+switchport port-security
+
+switchport port-security maximum 3
+
+switchport port-security violation restrict
+
+
+switchport port-security mabladdress sticky
+
+inter f0/2
+
+shutdown
+
+switchport mode access
+
+switchport access vlan 999
+
+exit
+
+inter g0/1
+
+switchport mode trunk
+
+switchport trunk native vlan 998
+
+switchport nonegotiate
